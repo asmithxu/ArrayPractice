@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 5.1 by Ayana Smith</title>
+</head>
+<body>
+    <script>
+        /**
+        * Part 1 - Creating Arrays
+        */
+
+        // 1. Create an Empty array
+
+        let newArray = ["Empty", "Array", 1, 2]
+        console.log(newArray);
+
+        // 2. Create an array that contains the string values "You" "can" "do" "it"
+
+
+        let arrayTwo = ["You", "can", "do", "it"]
+        console.log(arrayTwo);
+
+
+
+        /**
+        * Part 2 - Accessing Array elements by Index
+        */
+
+        let animals = ["dog", "cat", "lizard", "rabbit", "fish"];
+
+        // 1. Print the first element of the array.
+        console.log(animals[0]);
+
+        // 2. Print the third element of the array.
+        console.log(animals[2]);
+
+        // 3. Print the last element of the array using the length property. Explain your answer in comments
+        console.log(animals[animals.length - 1])
+        /* The array count starts at 0. The length count starts at one. Therefore the index will be one
+        behind the total length so we need to remove 1 from the length in order for the index to be correct. */
+
+        // 4. Try to access an index that is out of bounds (e.g., index 10) and observe what happens.
+        console.log(animals[10]);
+        //The answer comes back as undefined.
+
+
+
+        /**
+        * Part 3 Inserting values into an empty array
+        */
+
+        let numbers = [];  // Create an empty array
+
+        // 1. Insert the number 5 at index 0
+
+        numbers[0] = 5;
+
+
+        console.log(numbers);  // Expected output: [5]
+        console.log("Length = " + numbers.length);
+
+        // 2. Insert the number 10 at index 1
+
+        numbers[1] = 10;
+
+
+
+
+        console.log(numbers);  // Expected output: [5, 10]
+        console.log("Length = " + numbers.length);
+
+        // 3. Insert the number 15 at index 2
+
+
+        numbers[2] = 15;
+
+        console.log(numbers);  // Expected output: [5, 10, 15]
+        console.log("Length = " + numbers.length);
+        // 4. Try inserting a value at an index that is greater than the current length (e.g., index 5)
+
+        numbers[5] = 20;
+
+
+        console.log(numbers);  // Expected output: [5, 10, 15, empty x 2, 20]
+        console.log("Length = " + numbers.length);
+
+        // 5. Print the length of the array after each insertion.
+        
+
+
+        // 6. Change the value stored at index 1 from 10 to 30.
+        console.log[1] = 30
+
+
+        /**
+         * Part 4: Iterating over an Array with a For Loop
+         */
+
+        let colors = ["red", "green", "blue", "yellow", "purple"];
+
+        // 1. Use a `for` loop to print each color in the array.
+
+        for (i = 0; i <= colors.length - 1; i++) {
+            console.log(colors[i]);
+        }
+
+
+        // 2. Modify the loop to print the index along with each color.
+
+        for (i = 0; i <= colors.length - 1; i++) {
+            console.log("Index: " + i + " Color: " + colors[i])
+        }
+        
+    </script>
+</body>
+</html>
